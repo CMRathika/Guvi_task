@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{  
+  static void squareORCube(long num) 
+  { 
+    int i=1; 
+    int y=0;
+    while ((int)(Math.pow(i,6))<=num) 
+    { 
+      y=(int)(Math.pow(i,6)); 
+      ++i; 
+    } 
+  System.out.println(y);
+  } 
+  public static void main(String []args) 
+  { 
+    Scanner sc=new Scanner(System.in);
+    long no=sc.nextLong();  
+    squareORCube(no); 
+  } 
+}
